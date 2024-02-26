@@ -18,3 +18,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.form-group.required .form-label:after {
+    content: "*";
+    color: red;
+}
