@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Referral Communication Example</title>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="checkout.css" rel="stylesheet">
+    <style>
+        .modal-sheet .modal-dialog {
+
+            transition: bottom .75s ease-in-out;
+        }
+
+        .modal-sheet .modal-footer {
+            padding-bottom: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="modal modal-lg modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header border-bottom-0">
+                        <h1 class="modal-title fs-5">Email</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body py-0">
+                        <form>
+                            <div class="form-row mb-3">
+                                <label for="to" class="col-2 col-sm-1 col-form-label">To:</label>
+                                <div class="col-10 col-sm-11">
+                                    <input type="email" class="form-control" id="to" placeholder="Type email">
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <label for="cc" class="col-2 col-sm-1 col-form-label">CC:</label>
+                                <div class="col-10 col-sm-11">
+                                    <input type="email" class="form-control" id="cc" placeholder="Type email">
+                                </div>
+                            </div>
+                            <div class="form-row mb-3">
+                                <label for="bcc" class="col-2 col-sm-1 col-form-label">BCC:</label>
+                                <div class="col-10 col-sm-11">
+                                    <input type="email" class="form-control" id="bcc" placeholder="Type email">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-sm-11 ml-auto">
+                                <div class="toolbar" role="toolbar">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-bold"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-italic"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-underline"></span>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-align-left"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-align-right"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-align-center"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-align-justify"></span>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-indent"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-outdent"></span>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-list-ul"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-light">
+                                            <span class="fa fa-list-ol"></span>
+                                        </button>
+                                    </div>
+                                    <button type="button" class="btn btn-light">
+                                        <span class="fa fa-trash-o"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-light">
+                                        <span class="fa fa-paperclip"></span>
+                                    </button>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                            <span class="fa fa-tags"></span>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">add label <span class="badge badge-danger"> Home</span></a>
+                                            <a class="dropdown-item" href="#">add label <span class="badge badge-info"> Job</span></a>
+                                            <a class="dropdown-item" href="#">add label <span class="badge badge-success"> Clients</span></a>
+                                            <a class="dropdown-item" href="#">add label <span class="badge badge-warning"> News</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success">Send</button>
+                                    <button type="submit" class="btn btn-light">Draft</button>
+                                    <button type="submit" class="btn btn-danger">Discard</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p>This is a modal sheet, a variation of the modal that docs itself to the bottom of the viewport like the newer share sheets in iOS.</p>
+                    </div>
+                    <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+                        <button type="button" class="btn btn-lg btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+</html>
