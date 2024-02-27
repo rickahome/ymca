@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title class="mb-2">CDP Enrollment Form</title>
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     
+    <!-- Custom styles for this template -->
+    <link href="checkout.css" rel="stylesheet">
+  </head>
+  <body class="bg-body-tertiary">
+    
+<div class="container">
+  <main>
+    <div class="row g-2">
+      <div class="col-md-7 col-lg-8">
+       
+        <form class="needs-validation" novalidate>
+            <div class="row g-3">
+				<div class="my-3">
+                <h6 class="">Language<span><secondary-Text>(Select all that apply)<span></h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Arabic</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Chinese</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">English</label>
+                </div>
+				<div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox4" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Spanish</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox5" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox4">Prefer not to answer</label>
+                </div>       
+				<div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="languageCheckbox6" value="option3">
+					<label class="form-check-label" for="inlineCheckbox3">Other</label>
+					<input type="text" class="form-control" id="otherLanguage" placeholder="" value="" required>
+                    
+                </div>				
+			</div>
+			<div class="row g-3">
+			<div class="my-3">
+				<h6 class="">Race<span><secondary-Text>(Select all that apply)<span></h6>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">American Indian/Alaskan Native</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Asian</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Black or African American</label>
+                </div>
+				<div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox3">Hawaiian or Other Pacific Islander</label>
+                </div>
+				<div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox3">White or Caucasian</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox6" value="option6">
+                    <label class="form-check-label" for="inlineCheckbox4">Prefer not to answer</label>
+                </div>       
+				<div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="raceCheckbox7" value="option7">
+					<label class="form-check-label" for="inlineCheckbox3">Other</label>
+					<input type="text" class="form-control" id="otherLanguage" placeholder="" value="" required>
+                    
+                </div>		
+			</div>
+				<div class="col-md-5">
+                    <label for="ethnicity" class="form-label">Ethnicity</label>
+                    <select class="form-select" id="ethnicity" required>
+                        <option value="">Choose...</option>
+                        <option>Not Hispanic/Latino</option>
+                        <option>Hispanic/Latino</option>
+						<option>Prefer not to answer</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid option.
+                    </div>
+                </div>
+				
+				<div class="my-3">
+                <h6 class="">Did a healthcare professional ask you to enroll?</h6>
+                <div class="form-check form-check-inline">
+                    <input id="enrollCheckYes" name="enrollCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="enrollCheckYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input id="enrollCheckNo" name="enrollCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="enrollCheckNo">No</label>
+                </div>
+				
+				<div class="my-3">
+                <h6 class="my-1">If yes, which type?</h6>
+                <div class="form-check form-check-inline">
+                    <input id="typeCheckDoc" name="enrollTypeCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="enrollCheckDoc">Doctor/Doctor's Office</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input id="enrollCheckPhar" name="enrollTypeCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="enrollCheckPhar">Pharmacist</label>
+                </div>
+				<div class="form-check form-check-inline">
+                    <input id="enrollCheckOther" name="enrollTypeCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="enrollCheckOther">Other</label>
+					<input type="text" class="form-control" id="otherLanguage" placeholder="" value="">                    
+				</div>
+				
+				<div class="my-3">
+                <h6 class="">Are you a current YMCA Member?</h6>
+                <div class="form-check form-check-inline">
+                    <input id="memberCheckYes" name="memberCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="memberCheckYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input id="memberCheckNo" name="memberCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="memberCheckNo">No</label>
+                </div>
+                
+				<div class="my-3">
+                <h6 class="">Meets Federal Poverty Guidelines for Income Status</h6>
+                <div class="form-check form-check-inline">
+                    <input id="incomeCheckYes" name="incomeCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="incomeCheckYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input id="incomeCheckNo" name="incomeCheck" type="radio" class="form-check-input ">
+                    <label class="form-check-label" for="incomeCheckNo">No</label>
+                </div>
+				
+				<div class="col-md-5 my-2">
+                    <label for="income" class="form-label">Household Income</label>
+                    <select class="form-select" id="income" required>
+                        <option value="">Choose...</option>
+                        <option>$0-$13,999</option>
+                        <option>$14,000 - $24,999</option>
+						<option>$25,000 - $39,999</option>
+						<option>$40,000 - $54,999</option>
+						<option>$55,000 - $74,999</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid option.
+                    </div>
+                </div>
+				
+				<div class="my-3">
+                <div class="col-md-5 my-2">
+                    <label for="motivation" class="form-label">Primary Motivation to Join Program</label>
+                    <select class="form-select" id="motivation" required>
+                        <option value="">Choose...</option>
+                        <option>Current/Former Program Participant</option>
+                        <option>Family/Word of Mouth</option>
+						<option>Other Healthcare Provider</option>
+						<option>Insurance Company</option>
+						<option>Y Staff Member/Volunteer</option>
+						<option>Media/Marketing</option>
+						<option>Friends/Employer/Wellness Plan Doctor</option>
+						<option>Bloot Test Results Health</option>
+						<option>Risk Quiz Results</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid option.
+                    </div>
+                </div>				
+				</div>
+			<div class="col-sm-6">
+					<h6 class="">Emergency Contact</h6>
+                    <label for="contactName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid name is required.
+                    </div>
+			<div class="col-sm-12">
+					<label for="contactName" class="form-label">Relationship to Participant</label>
+					<input type="text" class="form-control" id="Relation" placeholder="" value="">
+                    
+			</div>
+			<div class="col-sm-12">
+				<label for="contactNumber" class="form-label">Phone Number</label>
+				<input type="text" class="form-control" id="ContactNumber" placeholder="" value="">             
+			
+            	
+			</div>
+				<div class="col-sm-12">
+                    <label for="disability" class="form-label">Do you have a visual or physical disability?</label>
+                    <select class="form-select" id="disability" required>
+                        <option value="">Choose...</option>
+                        <option>Yes - Visual Disability</option>
+                        <option>Yes - Physical Disability</option>
+						<option>Yes - Both</option>
+						<option>No</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid option.
+                    </div>
+                </div>
+				
+			
+            </div>
+			
+                    <label for="accomodations" class="form-label">If yes, would you like any accomodations? Please comment.</label>
+                    <input type="textarea" id="accomodations" rows="4" cols="600">
+                   
+				
+                
