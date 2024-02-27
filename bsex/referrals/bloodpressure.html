@@ -48,7 +48,7 @@
   <main>
     <div class="row g-2">
       <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">West Cook YMCA Blood Pressure Self-monitoring Program Referral FormWeight Loss Self Referral</h4>
+        <h4 class="mb-3">West Cook YMCA Blood Pressure Self-monitoring Program Self Referral</h4>
         <p>To qualify participants must be at least 18 years of age, diagnosed with hypertension or currently taking antihypertensive medication, not have experienced a recent cardiac event, not have atrial fibrilation or other arrythmias, and not at risk for lymphedema.</p>
         <form class="needs-validation" novalidate>
             <p>This form is HIPAA Compliant.</p>
@@ -73,7 +73,7 @@
                     <label for="username" class="form-label fw-bold">Program Requested</label>
                     <div class="input-group has-validation form-group required">
                         <span class="input-group-text">@</span>
-                        <input readonly type="text" class="form-control" id="program" value="Diabetes Prevention">
+                        <input readonly type="text" class="form-control" id="program" value="Blood pressure">
                         <div class="invalid-feedback">
                             Blood Pressur Loss.
                         </div>
@@ -92,7 +92,27 @@
                     <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                     <small class="text-body-secondary">Please enter a valid emailin</small>
                 </div>
-                <div class="my-3 col-12 form-group required">
+
+                <div class="mt-3 form-group required">
+                    <h6 class="form-label fw-bold">Gender at Birth</h6>
+                    <div class="form-check form-check-inline ">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="credit">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="debit">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="paypal">Prefer not to answer</label>
+                    </div>
+                </div>
+                <div class="col-6 form-group required">
+                    <label for="birthDate" class="form-label fw-bold fw-bold">Date of Birth</label>
+                    <input id="birthDate" class="form-control" type="date" />
+                </div>
+                <div class="col-12 form-group required">
                     <label for="email" class="form-label fw-bold">Height</label><span></span>
                     <input type="email" class="form-control" id="email" placeholder="e.g.5ft 9in">
                     <small class="text-body-secondary">ft in</small>
@@ -100,9 +120,84 @@
                         Please enter a valid email address.
                     </div>
                 </div>
+                <div class="col-12 form-group required">
+                    <label for="email" class="form-label fw-bold">Weight</label><span></span>
+                    <input type="email" class="form-control" id="email" placeholder="150lbs">
+                    <small class="text-body-secondary">lbs</small>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="col-12 form-group required">
+                    <label for="email" class="form-label fw-bold">BMI</label><span></span>
+                    <input type="email" class="form-control" id="email" placeholder="">
+                    <small class="text-body-secondary">Kg/m</small>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">Have you been diagnosed with Hypertension?. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">Are you on antihypertensive medication?. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">Have you had a recent Cardiac event?. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">Have you had atrial fibrillation or other arrhythmias?. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">Are you at risk for lymphedema?. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
 
 
                 <hr class="my-4">
+                <h4>Optional Information</h4>
                 <div class="col-12">
                     <label for="address" class="form-label fw-bold">Address<span class="text-body-secondary">(Optional)</span></label>
                     <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
@@ -142,67 +237,6 @@
                     </div>
                 </div>
             </div>
-
-            <hr class="my-4">
-
-            <div class="my-3 form-group required">
-                <h6 class="form-label fw-bold">Gender at Birth</h6>
-                <div class="form-check form-check-inline ">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input ">
-                    <label class="form-check-label" for="credit">Male</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input ">
-                    <label class="form-check-label" for="debit">Female</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input ">
-                    <label class="form-check-label" for="paypal">Prefer not to answer</label>
-                </div>
-            </div>
-            <div class="col-6 form-group required">
-                <label for="birthDate" class="form-label fw-bold fw-bold">Date of Birth</label>
-                <input id="birthDate" class="form-control" type="date" />
-            </div>
-            <div class="my-3 col-12 form-group required">
-                <label for="email" class="form-label fw-bold">Height</label><span></span>
-                <input type="email" class="form-control" id="email" placeholder="e.g.5ft 9in">
-                <small class="text-body-secondary">ft in</small>
-                <div class="invalid-feedback">
-                    Please enter a valid email address.
-                </div>
-            </div>
-            <div class="my-3 col-12 form-group required">
-                <label for="email" class="form-label fw-bold">Weight</label><span></span>
-                <input type="email" class="form-control" id="email" placeholder="150lbs">
-                <small class="text-body-secondary">lbs</small>
-                <div class="invalid-feedback">
-                    Please enter a valid email address.
-                </div>
-            </div>
-            <div class="my-3 col-12 form-group required">
-                <label for="email" class="form-label fw-bold">BMI</label><span></span>
-                <input type="email" class="form-control" id="email" placeholder="">
-                <small class="text-body-secondary">Kg/m</small>
-                <div class="invalid-feedback">
-                    Please enter a valid email address.
-                </div>
-            </div>
-
-
-
-
-            <div class="my-3 form-group required">
-                <h6 class="form-label fw-bold">Have you been diagnosed with Hypertension. </h6>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">No</label>
-                </div>
-            </div>
             <div class="my-3">
                 <h6 class="form-label fw-bold">Current YMCA member</h6>
                 <div class="form-check form-check-inline">
@@ -215,7 +249,6 @@
                 </div>
             </div>
 
-            <hr class="my-4">
 
             <hr class="my-4">
 
