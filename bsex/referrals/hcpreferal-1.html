@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <style>
+        .container {
+            max-width: 1024px;
+        }
+
+        body {
+            background-color: white;
+            font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+        }
+
+        .modal-header-info {
+            color: #fff;
+            padding: 9px 15px;
+            border-bottom: 1px solid #eee;
+            background-color: #5bc0de;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .form-group.required .form-label:after {
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+<body class="bg-body-tertiary">
+
+    <div class="container">
+        <main>
+            <h4 class="mb-3">Referral Details</h4>
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Patient First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Patient Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="row col-12">
+                        <label for="email" class="form-label">Patient Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row col-12">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+
+                <div class="row mt-3 form-group required">
+                    <h6 class="form-label fw-bold">Patient Sex at Birth</h6>
+                    <div class="form-check form-check-inline ">
+                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="credit">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="debit">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input ">
+                        <label class="form-check-label" for="paypal">Other</label>
+                    </div>
+                </div>
+                <div class="row form-group required">
+                    <label for="birthDate" class="form-label fw-bold fw-bold">Date of Birth</label>
+                    <input id="birthDate" class="form-control" type="date" />
+                </div>
+                <div class="row form-group required">
+                    <label for="contactPref" class="form-label fw-bold">Weight Category?</label>
+
+                    <div class="col-3 ">
+                        <label for="email" class="form-label">Feet</label><span></span>
+                        <select class="form-select" id="country" required>
+                            <option value="">Choose...</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select>
+                    </div>
+                    <div class="col-3 ">
+                        <label for="email" class="form-label">Inches</label>
+                        <select class="form-select" id="country" required>
+                            <option value="">Choose...</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                    </div>
+                    <div class="col-3 ">
+                        <label for="email" class="form-label fw-bold">Weight</label><span></span>
+                        <input type="text" class="form-control" id="email" placeholder="e.g 150">
+                        <small class="text-body-secondary">lbs</small>
+                    </div>
+                    <div class="col-3 ">
+                        <label for="email" class="form-label fw-bold">Points</label><span></span>
+                        <input type="text" class="form-control" id="email" readonly value="2">
+                        <small class="text-body-secondary">Calculated from chart</small>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            BMI Table
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">I am referring the patient to the Blood pressure Self-Monitoring Program. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">I am referring the patient to the Diabetes Prevention Program. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+                <div class="form-group required">
+                    <h6 class="form-label fw-bold">I am referring the patient to the Weight Loss Program. </h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+                <div class="row gy-3">
+                    <div class="col-2">
+                        <button class="btn btn-secondary btn-lg" type="submit">Back</button>
+                    </div>
+                    <div class="col-8 right-align"></div>
+                    <div class="col-2 right-align">
+                        <button class="btn btn-success btn-lg text-center" type="submit">Next</button>
+                    </div>
+                </div>
+            </form>
+
+        </main>
+
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">&copy; 2017–2024 YMCA </p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row bg-primary-subtle">
+                            <div class="col">Height</div>
+                            <div class="col">Range<br>(1 Point)</div>
+                            <div class="col">Range<br>(2 Points)</div>
+                            <div class="col">Above<br>(3 Points)</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">58</div>
+                            <div class="col">119-142</div>
+                            <div class="col">143-190</div>
+                            <div class="col">191</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">59</div>
+                            <div class="col">124-147</div>
+                            <div class="col">148-197</div>
+                            <div class="col">198</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">60</div>
+                            <div class="col">128-152</div>
+                            <div class="col">153-203</div>
+                            <div class="col">204 </div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">61</div>
+                            <div class="col">132-157</div>
+                            <div class="col">158-210</div>
+                            <div class="col">211</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">62</div>
+                            <div class="col">136-163</div>
+                            <div class="col">164-217</div>
+                            <div class="col">218</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">63</div>
+                            <div class="col">141-168</div>
+                            <div class="col">169-224</div>
+                            <div class="col">225</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">64</div>
+                            <div class="col">145-173</div>
+                            <div class="col">174-231</div>
+                            <div class="col">232</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">65</div>
+                            <div class="col">150-179</div>
+                            <div class="col">180-239</div>
+                            <div class="col">240 </div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">66</div>
+                            <div class="col">155-185</div>
+                            <div class="col">186-246</div>
+                            <div class="col">247</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">67</div>
+                            <div class="col">159-190</div>
+                            <div class="col">191-254</div>
+                            <div class="col">255</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">68</div>
+                            <div class="col">164-196</div>
+                            <div class="col">197-261</div>
+                            <div class="col">262</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">69</div>
+                            <div class="col">169-202</div>
+                            <div class="col">203-269</div>
+                            <div class="col">270</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">70</div>
+                            <div class="col">174-208</div>
+                            <div class="col">209-277</div>
+                            <div class="col">278</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">71</div>
+                            <div class="col">179-214</div>
+                            <div class="col">215-285</div>
+                            <div class="col">286</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">72</div>
+                            <div class="col">184-220</div>
+                            <div class="col">221-293</div>
+                            <div class="col">294</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">73</div>
+                            <div class="col">189-226</div>
+                            <div class="col">227-301</div>
+                            <div class="col">302</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">74</div>
+                            <div class="col">194-232</div>
+                            <div class="col">233-310</div>
+                            <div class="col">311</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">75</div>
+                            <div class="col">200-239</div>
+                            <div class="col">240-318</div>
+                            <div class="col">319</div>
+                        </div>
+                        <div class="row bg-light">
+                            <div class="col bg-dark-subtle">76</div>
+                            <div class="col">205-245</div>
+                            <div class="col">246-327</div>
+                            <div class="col">328</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>

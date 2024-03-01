@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom styles for this template -->
@@ -12,7 +15,7 @@
         }
 
         body {
-            background-color: ;
+            background-color: white;
             font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
         }
 
@@ -35,52 +38,68 @@
         }
     </style>
 </head>
-<body class="bg-body-tertiary">
+<body >
     <div class="container">
         <h1>Outstanding Referrals</h1>
         <!-- Content here -->
         <div class="container text-center">
-            <div class="row bg-primary-subtle">
-                <div class="col">Participant Id</div>
-                <div class="col">Full Name</div>
-                <div class="col">Program Requested</div>
-                <div class="col">Status</div>
-                <div class="col">Action</div>
+            <div class="row equal-height-row bg-primary-subtle fw-bold">
+                <div class="col equal-height-col">Participant Id</div>
+                <div class="col equal-height-col">Full Name</div>
+                <div class="col equal-height-col">Program Requested</div>
+                <div class="col equal-height-col">Status</div>
+                <div class="col equal-height-col">Existing<br>participant</div>
+                <div class="col equal-height-col">Action</div>
+            </div>
+            <div class="row equal-height-row bg-light">
+                <div class="col equal-height-col bg-dark-subtle">123-44-0ce2-001</div>
+                <div class="col equal-height-col">Evelyn Hawthorne</div>
+                <div class="col equal-height-col">Blood Pressure Monitoring</div>
+                <div class="col equal-height-col">Pending response</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Remind</button></div>
+            </div>
+            <div class="row equal-height-row bg-light">
+                <div class="col equal-height-col bg-dark-subtle">123-44-0ce2-003</div>
+                <div class="col equal-height-col">Caspian Locke</div>
+                <div class="col equal-height-col">Diabetes Prevention</div>
+                <div class="col equal-height-col">New referral</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm">Contact</button></div>
+            </div>
+            <div class="row equal-height-row bg-light">
+                <div class="col equal-height-col bg-dark-subtle">123-44-0ce2-004</div>
+                <div class="col equal-height-col">Seraphina Frost</div>
+                <div class="col equal-height-col">Blood Pressure Monitoring</div>
+                <div class="col equal-height-col">HCP referral</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Contact</button></div>
             </div>
             <div class="row bg-light">
-                <div class="col bg-dark-subtle">123-44-0ce2-001</div>
-                <div class="col">Evelyn Hawthorne</div>
-                <div class="col">Blood Pressure Monitoring</div>
-                <div class="col">Pending response</div>
-                <div class="col"><button type="button" class="btn btn-primary">Email</button></div>
+                <div class="col equal-height-col equal-height-row bg-dark-subtle">123-44-0ce2-012</div>
+                <div class="col equal-height-col">Dorian Wilde</div>
+                <div class="col equal-height-col">Weight Loss Program</div>
+                <div class="col equal-height-col">Pending response</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Remind</button></div>
             </div>
             <div class="row bg-light">
-                <div class="col bg-dark-subtle">123-44-0ce2-003</div>
-                <div class="col">Caspian Locke</div>
-                <div class="col">Blood Pressure Monitoring</div>
-                <div class="col">Pending response</div>
-                <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
-            </div>
-            <div class="row bg-light">
-                <div class="col bg-dark-subtle">123-44-0ce2-004</div>
-                <div class="col">Seraphina Frost</div>
-                <div class="col">Blood Pressure Monitoring</div>
-                <div class="col">Pending response</div>
-                <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
-            </div>
-            <div class="row bg-light">
-                <div class="col bg-dark-subtle">123-44-0ce2-012</div>
-                <div class="col">Dorian Wilde</div>
-                <div class="col">Blood Pressure Monitoring</div>
-                <div class="col">Pending response</div>
-                <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
-            </div>
-            <div class="row bg-light">
-                <div class="col bg-dark-subtle">123-44-0ce2-022</div>
-                <div class="col">Dorian Wilde</div>
-                <div class="col">Blood Pressure Monitoring</div>
-                <div class="col">Pending response</div>
-                <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
+                <div class="col equal-height-col equal-height-row bg-dark-subtle">123-44-0ce2-022</div>
+                <div class="col equal-height-col">Dorian Wilde</div>
+                <div class="col equal-height-col">Blood Pressure Monitoring</div>
+                <div class="col equal-height-col">Pending response</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm">Remind</button></div>
             </div>
         </div>
         
