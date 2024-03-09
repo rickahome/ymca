@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>CDP Enrollment Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    <!-- Custom styles for this template -->
+    <style>
+        .container {
+            max-width: 95%;
+        }
+
+        body {
+            background-color: #333;
+            font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+        }
+
+        .modal-header-info {
+            color: #fff;
+            padding: 9px 15px;
+            border-bottom: 1px solid #eee;
+            background-color: #5bc0de;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .form-group.required .form-label:after {
+            content: "*";
+            color: red;
+        }
+
+
+        .card-header .bi {
+            transition: .3s transform ease-in-out;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+</head>
+<body class="bg-body-tertiary">
+    <div class="container">
+        <main>
+            <h4 class="mb-3">West Cook YMCA CDP Program Questions </h4>
+            <p>This form is used during the interview with the Candidate for enrollment into the Program requested.</p>
+
+            <div class="row mt-3 g-3">
+                <div class="col-8 form-group required">
+                    <label for="username" class="form-label fw-bold">Program Applied for</label>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Blood Pressure Monitoring
+                            <span><i class="bi-check" style="font-size: 1rem; background-color:darkblue;  color: white;"></i></span>
+                            <span id="bpchev" style="float:right">New</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Weight Loss Program
+                            <span id="bpchev" style="float:right">Not Applied</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Diabetes prevention
+                            <span id="bpchev" style="float:right">Physician referred</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-3 g-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse-bp" aria-expanded="true" aria-controls="collapse-example" id="heading-example">
+                            <h4>Height and Weight</h4>
+                        </a>
+                        <span id="bpchev" style="float:right"><i class="bi bi-chevron-down" style="font-size: 2rem; color: blue;"></i></span>
+                    </div>
+                    <div id="collapse-bp" class="collapse " aria-labelledby="heading-example">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <div class="row">
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Feet</label><span></span>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">5</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option selected>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Inches</label>
+                                        <select class="form-select" id="country" required>
+                                            <option>6</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option selected>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Weight</label><span></span>
+                                        <input type="text" class="form-control" id="email" value="150" required>
+                                        <small class="text-body-secondary">lbs</small>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <label for="email" class="form-label fw-bold">BMI</label><span></span>
+                                        <input type="text" class="form-control" id="email" readonly value="26">
+                                        <small class="text-body-secondary">Calculated from height and weight</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 g-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse-wl" aria-expanded="true" aria-controls="collapse-example" id="heading-example">
+                            <h4>Weight Loss Answers from referral/eligibility screening</h4>
+                        </a>
+                        <span id="bpchev" style="float:right"><i class="bi bi-chevron-down" style="font-size: 2rem; color: blue;"></i></span>
+                    </div>
+                    <div id="collapse-wl" class="collapse " aria-labelledby="heading-example">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Confident in my ability to set and attain reasonable goals to acheive my desired long-term outcome</h5>
+                                        <small class="text-body-secondary">1-5</small>
+                                    </div>
+                                    <p class="mb-1">3</p>
+                                    <small class="text-body-secondary">1-Strongly Disagree to 5-Strongly Agree</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Confident in my ability to maintain an excercise routine independantly.</h5>
+                                        <small class="text-body-secondary">1-5</small>
+                                    </div>
+                                    <p class="mb-1">3</p>
+                                    <small class="text-body-secondary">1-Strongly Disagree to 5-Strongly Agree</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Confident in my ability to track food intake</h5>
+                                        <small class="text-body-secondary">1-5</small>
+                                    </div>
+                                    <p class="mb-1">3</p>
+                                    <small class="text-body-secondary">1-Strongly Disagree to 5-Strongly Agree</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Confident in my ability to modify my food intake in ways that support my weight loss goals.<br>(e.g., portion control, avoiding emotional eating, choosing nutrient-dense foods, etc.)</h5>
+                                        <small class="text-body-secondary">1-5</small>
+                                    </div>
+                                    <p class="mb-1">3</p>
+                                    <small class="text-body-secondary">1-Strongly Disagree to 5-Strongly Agree</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success text-center" type="submit">Enroll</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mt-3">
+                            <h4 class="mt-3">YMCA's Weight Loss Program Enrollment Interview Questions</h4>
+                            <h6 class="">Score each statement using the following scale: </h6>
+                            <h6 class="">5- Strongly Agree, 4- Agree, 3- Neutral, 2- Disagree, 1- Strongly Disagree</h6>
+                            <div class="col-md-8">
+                                <label for="q1" class="form-label">I am confident in my ability to set and attain reasonable goals to achieve my desired long- term outcome.</label>
+                                <select class="form-select" id="q1">
+                                    <option value="">Choose...</option>
+                                    <option>5 - Strongly Agree</option>
+                                    <option>4 - Agree</option>
+                                    <option>3 - Neutral</option>
+                                    <option>2 - Disagree</option>
+                                    <option>1 - Strongly Disagree</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="q2" class="form-label">I am confident in my ability to maintain an exercise routine independently.</label>
+                                <select class="form-select" id="q2">
+                                    <option value="">Choose...</option>
+                                    <option>5 - Strongly Agree</option>
+                                    <option>4 - Agree</option>
+                                    <option>3 - Neutral</option>
+                                    <option>2 - Disagree</option>
+                                    <option>1 - Strongly Disagree</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="q3" class="form-label">I am confident in my ability to track food intake.</label>
+                                <select class="form-select" id="q3">
+                                    <option value="">Choose...</option>
+                                    <option>5 - Strongly Agree</option>
+                                    <option>4 - Agree</option>
+                                    <option>3 - Neutral</option>
+                                    <option>2 - Disagree</option>
+                                    <option>1 - Strongly Disagree</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="q4" class="form-label">I am confident in my ability to modify my food intake in ways that support my weight loss goals (e.g., portion control, avoiding emotional eating, choosing nutrient-dense foods, etc.)</label>
+                                <select class="form-select" id="q4">
+                                    <option value="">Choose...</option>
+                                    <option>5 - Strongly Agree</option>
+                                    <option>4 - Agree</option>
+                                    <option>3 - Neutral</option>
+                                    <option>2 - Disagree</option>
+                                    <option>1 - Strongly Disagree</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="my-3">
+                                <h6 class="">I give consent to receive email communication from YMCA of the USA and the West Cook YMCA for the purpose of evaluating the Weight Loss Program</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="emailConsentYes" name="emailConsent" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="emailConsentYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="emailConsentNo" name="emailConsent" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="emailConsentNo">No</label>
+                                </div>
+
+                                <p class="mt-3">
+                                    As a leading nonprofit improving the nation’s health, the Y supports all individuals in achieving their health goals. The Y is always striving to learn more about program improvement. To that end, we are requesting your permission to collect your participation data:
+                                    I acknowledge data from this program will be collected by the local YMCA and may be shared with YMCA of the USA for purposes of evaluating and improving the Weight Loss Program. I authorize and acknowledge that I have read, understand, and agree to the above.
+                                </p>
+
+                                <div class="col-sm-4">
+                                    <label for="name" class="form-label">Participant Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="" value="">
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label for="signature" class="form-label">Signature</label>
+                                    <input type="text" class="form-control" id="signature" placeholder="" value="">
+
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <label for="date" class="form-label">Date</label>
+                                    <input type="text" class="form-control" id="date" placeholder="" value="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="insurance" class="form-label">Insurance Information</label>
+                                    <select class="form-select" id="insuranceInfo">
+                                        <option value="">Choose...</option>
+                                        <option>Medicare</option>
+                                        <option>Medicaid</option>
+                                        <option>Private</option>
+                                        <option>Other</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3 g-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse-dpp" aria-expanded="true" aria-controls="collapse-example" id="heading-example">
+                            <h4>Diabetes Prevention Answers from referral/eligibility screening</h4>
+                        </a>
+                        <span id="bpchev" style="float:right"><i class="bi bi-chevron-down" style="font-size: 2rem; color: blue;"></i></span>
+                    </div>
+                    <div id="collapse-dpp" class="collapse " aria-labelledby="heading-example">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">A1C blood value</h5>
+                                        <small class="text-body-secondary"></small>
+                                    </div>
+                                    <p class="mb-1">%6.1</p>
+                                    <small class="text-body-secondary">If percentage is between 5.7%-6.4%, automatically qualfy for this program.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Age</h5>
+                                        <small class="text-body-secondary"></small>
+                                    </div>
+                                    <p class="mb-1">67</p>
+                                    <small class="text-body-secondary">Younger than 40 years/40-49/50-59/60 years or older. (Calculated from DOB.)</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">If woman have you ever been diagnosed with gestational disease?</h5>
+                                        <small>Yes/No</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                    <small class="text-body-secondary"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Have a mother,father,sister or brother with diabetes</h5>
+                                        <small class="text-body-secondary">Yes/No</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                    <small class="text-body-secondary"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Diagnosed with high blood pressure</h5>
+                                        <small class="text-body-secondary">Yes/No</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                    <small class="text-body-secondary"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">physically active</h5>
+                                        <small class="text-body-secondary">Yes/No</small>
+                                    </div>
+                                    <p class="mb-1">Yes</p>
+                                    <small class="text-body-secondary"></small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Total Points.</h5>
+                                        <small class="text-body-secondary">1-5</small>
+                                    </div>
+                                    <p class="mb-1">3</p>
+                                    <small class="text-body-secondary">Calculated from Risk Assessment.</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success text-center" type="submit">Enroll</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mt-3">
+                            <h4 class="mt-3">YMCA's Diabetes Prevention Program Enrollment Interview Questions</h4>
+                            <div class="my-3">
+                                <h6 class="">Do you have a recent (within the last year) A1c value?</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                                <h5 class="mt-3">If yes:</h5>
+                                <div class="col-sm-6">
+                                    <label for="a1cAsk" class="form-label">What is the A1c value?</label>
+                                    <input type="text" class="form-control" id="a1cAsk" placeholder="" value="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="a1cTest" class="form-label">What is the A1c test date?</label>
+                                    <input type="text" class="form-control" id="a1cTest" placeholder="" value="">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="a1cProvider" class="form-label">What is the name of the healthcare provider who requested the blood test?</label>
+                                    <input type="text" class="form-control" id="a1cProvider" placeholder="" value="">
+                                </div>
+                                <h5 class="mt-3">If no:</h5>
+                                <div class="col-sm-6">
+                                    <label for="riskAsk" class="form-label">What is your Risk Test Score?</label>
+                                    <input type="text" class="form-control" id="riskAsk" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-3 form-label ">Have you been previously diagnosed with type 1 or type 2 diabetes (gestational diabetes not included? </h6>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" name="emailcb" type="radio" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" name="emailcb" type="radio" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-3 form-label">
+                                    Have you been previously diagnosed with type 1 or type 2 diabetes (gestational diabetes not included?
+                                </h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck1" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckNo" name="a1cCheck1" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-3 form-label">
+                                    Have you been previously diagnosed with end-stage renal disease?
+                                </h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck2" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckNo" name="a1cCheck2" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-3 form-label">
+                                    Are you currently pregnant?
+                                </h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck3" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckNo" name="a1cCheck3" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-3 form-label">
+                                    Have you been previously diagnosed with gestational diabetes?
+                                </h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck4" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckNo" name="a1cCheck4" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 g-3">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="btn" data-bs-toggle="collapse" href="#collapse-bp" aria-expanded="true" aria-controls="collapse-example" id="heading-example">
+                            <h4>Blood Pressure Monitoring Answers from referral/eligibility screening</h4>
+                        </a>
+                        <span id="bpchev" style="float:right"><i class="bi bi-chevron-down" style="font-size: 2rem; color: blue;"></i></span>
+                    </div>
+                    <div id="collapse-bp" class="collapse " aria-labelledby="heading-example">
+                        <div class="card-body">
+                            <div class="list-group">
+                                <div class="row">
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Feet</label><span></span>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">5</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option selected>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Inches</label>
+                                        <select class="form-select" id="country" required>
+                                            <option>6</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option selected>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3 form-group required">
+                                        <label for="email" class="form-label fw-bold">Weight</label><span></span>
+                                        <input type="text" class="form-control" id="email" value="150" required>
+                                        <small class="text-body-secondary">lbs</small>
+                                    </div>
+                                    <div class="col-3 ">
+                                        <label for="email" class="form-label fw-bold">BMI</label><span></span>
+                                        <input type="text" class="form-control" id="email" readonly value="26">
+                                        <small class="text-body-secondary">Calculated from height and weight</small>
+                                    </div>
+
+                                </div>
+
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Have you been diagnosed with Hypertension?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">Yes</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Are you on antihypertensive medication?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">Yes</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Are you on antihypertensive medication?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">Yes</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Have you had a recent Cardiac event?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Have you had atrial fibrillation or other arrhythmias?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Are you at risk for lymphedema?</h5>
+                                        <small class="text-body-secondary">Y/N</small>
+                                    </div>
+                                    <p class="mb-1">No</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success text-center" type="submit">Enroll</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="mt-3 form-label">YMCA's Blood Pressure Self Monitoring Program Enrollment Interview Questions</h4>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Have you ever been diagnosed with high blood pressure/hypertension</h6>
+                                <div class="form-check form-check-inline ">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Are you currently taking prescription medication to control or manage your high blood pressure?</h6>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Were you diagnosed <i>in the last 12 months</i> with high blood pressure/hypertension?</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Have you experienced a cardiac event in the last year?</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Do you have atrial fibrillation or other arrhythmias?</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="form-group required">
+                                <h6 class="mt-2 form-label">Are you at risk for lymphedema?</h6>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">No</label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 g-3">
+                <div class="card">
+                    <div class="card-header fw-bold">
+                        <h4 class="text-primary">Internal Use Only:</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row ">
+                            <div class="col-7 ">
+                                <h5 class="mt-2 form-label">Initial BP Measurment</h5>
+                                <div class="input-group">
+                                    <span class="input-group-text">Systolic BP:</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                    <span class="input-group-text">Diastolic  BP:</span>
+                                    <input type="text" aria-label="Last name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-5 ">
+                                <h5 class="mt-2 form-label">Arm</h5>
+                                <div class="form-check form-check-inline">
+                                    <input id="a1cCheckYes" name="a1cCheckx" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckYes">Right</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-3">
+                                    <input id="a1cCheckNo" name="a1cCheckx" type="radio" class="form-check-input ">
+                                    <label class="form-check-label" for="a1cCheckNo">Left</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <div class="input-group">
+                                    <span class="input-group-text">Input Taken By:</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="">
+                                    <span class="h6">BP Cuff Needed:</span>
+                                    <div class="form-check form-check-inline">
+                                        <input id="a1cCheckYes" name="a1cCheckxx" type="radio" class="form-check-input ">
+                                        <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-3">
+                                        <input id="a1cCheckNo" name="a1cCheckxx" type="radio" class="form-check-input ">
+                                        <label class="form-check-label" for="a1cCheckNo">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 col-12">
+                            <div class="form-group required">
+                                <h6 class="form-label fw-bold">Participant Status</h6>
+                                <div class="form-check form-check-inline">
+                                    <label class="mx-2">Enroll Participant</label><button class="ml-2 btn btn-primary btn-sm" type="button" aria-expanded="false"><i class="bi bi-envelope pl-2"></i></button>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="mx-2">Waitlist Participant</label><button class="btn btn-success btn-sm" type="button" aria-expanded="false"><i class="bi bi-person-plus-fill"></i></button>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="mx-2">Dropout Participant</label><button class="btn btn-danger btn-sm" type="button" aria-expanded="false"><i class="bi bi-x-square"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <span class="input-group-text fw-bold">Input Taken By:</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-8">
+                                <div class="row ">
+                                    <div class="form-group required">
+                                        <h6 class="mt-2 form-label fw-bold">Authorization Forms Collected</h6>
+                                        <div class="form-check form-check-inline">
+                                            <input id="a1cCheckYes" name="a1cCheck" type="radio" class="form-check-input ">
+                                            <label class="form-check-label" for="a1cCheckYes">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline mb-3">
+                                            <input id="a1cCheckNo" name="a1cCheck" type="radio" class="form-check-input ">
+                                            <label class="form-check-label" for="a1cCheckNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <span class="input-group-text fw-bold">Class Delivery Mode:</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">&copy; 2017–2024 YMCA </p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
