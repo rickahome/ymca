@@ -59,9 +59,43 @@
         <div class="row gy-3">
             <div class="col-10"></div>
             <div class="col-2">
-                <button class="btn btn-success btn-lg" type="button" onClick="parent.location='hcpreferal-1.html">Next</button>
+                <button class="btn btn-success btn-lg" type="button" onClick="nextpage('hcpreferal-1.html')">Next</button>
             </div>
         </div>
     </div>
+    <input type="hidden" id="messageText" value="https://www.notion.so/christopherduda/UC-002-PhysicianReferral-8c44e8eeb93f448299896db529bc3587?pvs=4#856106f1c6834987aa3af873a2bf980b" />
+    <script>
+        window.addEventListener('message', function (event) {
+            console.log("Message received from the parent: " + event.data); // Message received from parent
+            var message = document.querySelector("#messageText").value;
+            window.parent.postMessage(message, "*");
+        });
+    </script>
+    <script>
+        function nextpage(nextpg) {
+            var location = window.location
+            var url = location.href;
+            var hostname = location.hostname;
+            var protocol = location.protocol;
+            var pathname = location.pathname;
+
+            if (protocol.startsWith('file')) {
+                var splitURL = pathname.split("/");
+                var len = splitURL.length
+                var newpath = ""
+                for (let i = 0; i < len - 1; i++) {
+                    newpath += splitURL[i] + "/";
+                }
+                newloc = protocol + "//" + newpath + nextpg;
+            } else {
+                newloc = protocol + "//" + hostname + "/dsiymca" + nextpg;
+
+            }
+            //alert(newloc);
+            window.location.href = newloc
+        }
+
+
+    </script>
 </body>
 </html>

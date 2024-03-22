@@ -8,10 +8,13 @@
     <meta name="generator" content="Hugo 0.122.0">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <!-- Custom styles for this template -->
     <style>
         .container {
-            max-width: 1024px;
+            max-width: 95%;
         }
 
         body {
@@ -38,7 +41,7 @@
         }
     </style>
 </head>
-<body >
+<body>
     <div class="container">
         <h2>Outstanding Referrals</h2>
         <!-- Content here -->
@@ -53,57 +56,93 @@
             </div>
             <div class="row equal-height-row bg-light">
                 <div class="col equal-height-col">Evelyn Hawthorne</div>
-                <div class="col equal-height-col">Blood Pressure Monitoring</div>
+                <div class="col equal-height-col">Blood Pressure Self-monitoring Program</div>
                 <div class="col equal-height-col">01/01/2024</div>
-                <div class="col equal-height-col">Pending response</div>
+                <div class="col equal-height-col">Self referral</div>
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Remind</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refbpdetails.html')">Select</button></div>
             </div>
             <div class="row equal-height-row bg-light">
                 <div class="col equal-height-col">Caspian Locke</div>
                 <div class="col equal-height-col">Diabetes Prevention</div>
                 <div class="col equal-height-col">01/01/2024</div>
-                <div class="col equal-height-col">New referral</div>
+                <div class="col equal-height-col">Self referral</div>
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm">Contact</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm" onClick="nextpage('refdppdetails.html')">Select</button></div>
             </div>
             <div class="row equal-height-row bg-light">
                 <div class="col equal-height-col">Seraphina Frost</div>
+                <div class="col equal-height-col">Weight Loss Program</div>
+                <div class="col equal-height-col">01/01/2024</div>
+                <div class="col equal-height-col">HCP referral</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refhcpdetails.html')">Select</button></div>
+            </div>
+            <div class="row bg-light">
+                <div class="col equal-height-col">Dorian Wilde</div>
+                <div class="col equal-height-col">Weight Loss Program</div>
+                <div class="col equal-height-col">01/01/2024</div>
+                <div class="col equal-height-col">HCP referral</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refwldetails.html')">Select</button></div>
+            </div>
+            <div class="row bg-light">
+                <div class="col equal-height-col">Dorian Wilde</div>
                 <div class="col equal-height-col">Blood Pressure Monitoring</div>
                 <div class="col equal-height-col">01/01/2024</div>
                 <div class="col equal-height-col">HCP referral</div>
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Contact</button></div>
-            </div>
-            <div class="row bg-light">
-                <div class="col equal-height-col">Dorian Wilde</div>
-                <div class="col equal-height-col">Weight Loss Program</div>
-                <div class="col equal-height-col">01/01/2024</div>
-                <div class="col equal-height-col">Pending response</div>
-                <div class="col equal-height-col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm">Remind</button></div>
-            </div>
-            <div class="row bg-light">
-                <div class="col equal-height-col">Dorian Wilde</div>
-                <div class="col equal-height-col">Blood Pressure Monitoring</div>
-                <div class="col equal-height-col">01/01/2024</div>
-                <div class="col equal-height-col">Pending response</div>
-                <div class="col equal-height-col">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm">Remind</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm" onClick="nextpage('refhcpdetails.html')">Select</button></div>
             </div>
         </div>
-        
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <input type="hidden" id="messageText" value="*" />
+    <script>
+
+        window.addEventListener('message', function (event) {
+            console.log("Message received from the parent: " + event.data); // Message received from parent
+            var message = document.querySelector("#messageText").value;
+            window.parent.postMessage(message, "*");
+        });
+
+        function makeelegible() {
+            p = document.querySelector('#modaltext');
+            p.textContent = 'This candidate meets eligibility requirements. press confirm to proceed to enrollment.';
+            myModal.show();
+        };
+        function nextpage(nextpg) {
+            var location = window.location
+            var url = location.href;
+            var hostname = location.hostname;
+            var protocol = location.protocol;
+            var pathname = location.pathname;
+
+            if (protocol.startsWith('file')) {
+                var splitURL = pathname.split("/");
+                var len = splitURL.length
+                var newpath = ""
+                for (let i = 0; i < len - 1; i++) {
+                    newpath += splitURL[i] + "/";
+                }
+                newloc = protocol + "//" + newpath + nextpg;
+            } else {
+                newloc = protocol + "//" + hostname + "/dsiymca/referrals/" + nextpg;
+
+            }
+            //alert(newloc);
+            window.location.href = newloc
+        }
+    </script>
 </body>
 </html>

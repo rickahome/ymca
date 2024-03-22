@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <style>
         .container {
-            max-width: 960px;
+            max-width: 90%;
         }
 
         body {
@@ -126,6 +126,25 @@
                                 <h5 class="card-title mb-2 text-body-secondary">Additional Risk assessment.</h5>
 
                                 <div class="form-group required">
+                                    <label for="contactPref" class="form-label fw-bold">How old are you?</label>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="flexRadiowd0" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Younger than 40 years (0 Points)</label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="flexRadiowd0" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">40-49 Years (1 Point)</label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="flexRadiowd0" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">50-59 Years (2 Points)</label>
+                                    </div>
+                                    <div class="form-check ">
+                                        <input class="form-check-input" type="radio" name="flexRadiowd0" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">60 years or older (3 Points)</label>
+                                    </div>
+                                </div>
+                                <div class="form-group required">
                                     <label for="contactPref" class="form-label fw-bold">If you are woman have you ever been diagnosed with gestational disease?</label>
                                     <div class="form-check ">
                                         <input class="form-check-input" type="radio" name="flexRadiowd" id="inlineCheckbox1" value="option1">
@@ -172,6 +191,54 @@
                                         <label class="form-check-label" for="inlineCheckbox1">No. (0 point)</label>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <label for="contactPref" class="form-label fw-bold">Weight Category</label>
+                                    <div class="col-4 form-group required">
+                                        <label for="email" class="form-label fw-bold">Feet</label><span></span>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Choose...</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 form-group required">
+                                        <label for="email" class="form-label fw-bold">Inches</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Choose...</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 form-group required">
+                                        <label for="email" class="form-label fw-bold">Weight</label><span></span>
+                                        <input type="text" class="form-control" id="email" placeholder="e.g 150" required>
+                                        <small class="text-body-secondary">lbs</small>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <label for="email" class="form-label fw-bold">BMI</label><span></span>
+                                    <div class="col-md-3 w-25 input-group ">
+                                        <input type="text" class="form-control" id="email" readonly value="2">
+                                        <button type="button" class="btn btn-primary btn-sm " data-bs-toggle="modal" data-bs-target="#exampleModal">Points</button>
+                                    </div>
+                                    <small class="text-body-secondary">Calculated from height and weight</small>
+                                </div>
+
                                 <div class="card-footer fw-bold">
                                     <div class="col-sm-6 form-group ">
                                         <label for="lastName" class="form-label fw-bold">Total Points</label>
@@ -184,24 +251,27 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="my-3 form-group required">
-                        <h6 class="form-label fw-bold">Consent to receive email communication from YMCA of the USA and West Cook YMCA for the purpose of evaluating the Weight Loss Program. </h6>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="emailcb" type="radio" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" name="emailcb" type="radio" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">No</label>
-                        </div>
-                    </div>
+                    <p>
+
+                        If your score is 5 or higher, you are at increased risk for prediabetes and are at high risk for type 2 diabetes and may qualify for the Diabetes Prevention Program. However, only your doctor can tell for sure if you have type 2 diabetes or prediabetes, a condition in which blood sugar levels are higher than normal but not high enough yet to be diagnosed as type 2 diabetes.
+                    </p>
+                    <p>
+                        Talk to your doctor to see if additional testing is needed.If you are African American, Hispanic/Latino American, American Indian/Alaska Native, Asian American, or Pacific Islander, you are at higherrisk for prediabetes and type 2 diabetes. Also, if you are Asian American, you are at increased risk for type 2 diabetes at a lower weight (about 15 pounds lower than weights in the 1 Point column). Talk to your doctor to see if you should have your blood sugar tested.
+                    </p>
                 </div>
+                <div class="row mt-3">
+                    <p>
+                        As a leading nonprofit improving the nation’s health, the Y supports all individuals in achieving their health goals. The Y is always striving to learn more about program improvement. To that end, we are requesting your permission to collect your participation data:
+                    </p>
+                    <p>
+                        I acknowledge data from this program will be collected by the local YMCA and may be shared with YMCA of the USA for purposes of evaluating and improving the Diabetes prevention program. I authorize and acknowledge that I have read, understand, and agree to the above.
+                    </p>
+                    <p>
+                        I also acknowledge that submitting this form willbe consent to to receive email communication from YMCA of the USA and West Cook YMCA for the purpose of evaluating the Diabetes prevention program.
+                    </p>
+                </div>
+                <hr class="my-4">
                 <div class="row mt-3 ">
-                    <div class="form-group required">
-                        <label for="startDate" class="form-label fw-bold">Today''s Date</label>
-                        <input id="startDate" class="form-control" type="date" />
-                    </div>
-                    <hr class="my-4">
                     <button class="w-100 btn btn-primary btn-lg" type="submit">Apply</button>
                 </div>
             </form>
@@ -222,7 +292,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Risk Assessment Point Range</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -352,7 +422,14 @@
             </div>
         </div>
     </div>
-
+    <input type="hidden" id="messageText" value="https://www.notion.so/christopherduda/UC-001-BP-WL-DPP-SelfReferral-55e4ea0882d247c79e673a7932a823da?pvs=4#9c5e056377284eccab57847ec0b5f315" />
+    <script>
+        window.addEventListener('message', function (event) {
+            console.log("Message received from the parent: " + event.data); // Message received from parent
+            var message = document.querySelector("#messageText").value;
+            window.parent.postMessage(message, "*");
+        });
+    </script>
 </body>
 
 

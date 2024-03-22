@@ -182,11 +182,11 @@
                 <hr class="my-4">
                 <div class="row gy-3">
                     <div class="col-2">
-                        <button class="btn btn-secondary btn-lg" type="submit">Back</button>
+                        <button class="btn btn-secondary btn-lg" type="button" onClick="nextpage('hcpintro.html')">Back</button>
                     </div>
                     <div class="col-8 right-align"></div>
                     <div class="col-2 right-align">
-                        <button class="btn btn-success btn-lg text-center" type="submit">Next</button>
+                        <button class="btn btn-success btn-lg text-center" type="button" onClick="nextpage('hcpreferal-2.html')">Next</button>
                     </div>
                 </div>
             </form>
@@ -338,9 +338,43 @@
             </div>
         </div>
     </div>
+    <input type="hidden" id="messageText" value="https://www.notion.so/christopherduda/UC-002-PhysicianReferral-8c44e8eeb93f448299896db529bc3587?pvs=4#61b5674d83fc4d92bada739d80f310e6" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('message', function (event) {
+            console.log("Message received from the parent: " + event.data); // Message received from parent
+            var message = document.querySelector("#messageText").value;
+            window.parent.postMessage(message, "*");
+        });
+    </script>
+    <script>
+        function nextpage(nextpg) {
+            var location = window.location
+            var url = location.href;
+            var hostname = location.hostname;
+            var protocol = location.protocol;
+            var pathname = location.pathname;
+
+            if (protocol.startsWith('file')) {
+                var splitURL = pathname.split("/");
+                var len = splitURL.length
+                var newpath = ""
+                for (let i = 0; i < len - 1; i++) {
+                    newpath += splitURL[i] + "/";
+                }
+                newloc = protocol + "//" + newpath + nextpg;
+            } else {
+                newloc = protocol + "//" + hostname + "/dsiymca" + nextpg;
+
+            }
+            //alert(newloc);
+            window.location.href = newloc
+        }
+
+
+    </script>
 </body>
 
 </html>
