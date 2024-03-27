@@ -250,5 +250,14 @@
             </div>
         </main>
     </div>
+    <input type="hidden" id="messageText" value="*" />
+    <script>
+        window.addEventListener('message', function (event) {
+            console.log("Message received from the parent: " + event.data); // Message received from parent
+            var message = document.querySelector("#messageText").value;
+            window.parent.postMessage(message, "*");
+        });
+    </script>
+
 </body>
 </html>

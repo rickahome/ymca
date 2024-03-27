@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Outstanding Referrals</h2>
+        <h2>Outstanding Referrals waiting for Eligibilty</h2>
         <!-- Content here -->
         <div class="container text-center">
             <div class="row equal-height-row bg-primary-subtle fw-bold">
@@ -65,6 +65,16 @@
                 <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refbpdetails.html')">Select</button></div>
             </div>
             <div class="row equal-height-row bg-light">
+                <div class="col equal-height-col">Evelyn Hawthorne</div>
+                <div class="col equal-height-col">Weight Loss Program</div>
+                <div class="col equal-height-col">01/01/2024</div>
+                <div class="col equal-height-col">Self referral</div>
+                <div class="col equal-height-col">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                </div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refwldetails.html')">Select</button></div>
+            </div>
+            <div class="row equal-height-row bg-light">
                 <div class="col equal-height-col">Caspian Locke</div>
                 <div class="col equal-height-col">Diabetes Prevention</div>
                 <div class="col equal-height-col">01/01/2024</div>
@@ -82,32 +92,32 @@
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refhcpdetails.html')">Select</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refhcpwldetails.html')">Select</button></div>
             </div>
             <div class="row bg-light">
                 <div class="col equal-height-col">Dorian Wilde</div>
-                <div class="col equal-height-col">Weight Loss Program</div>
+                <div class="col equal-height-col">Diabetes Prevention Program</div>
                 <div class="col equal-height-col">01/01/2024</div>
                 <div class="col equal-height-col">HCP referral</div>
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refwldetails.html')">Select</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary btn-sm" onClick="nextpage('refhcpdppdetails.html')">Select</button></div>
             </div>
             <div class="row bg-light">
                 <div class="col equal-height-col">Dorian Wilde</div>
-                <div class="col equal-height-col">Blood Pressure Monitoring</div>
+                <div class="col equal-height-col">Blood Pressure Self-Monitoring</div>
                 <div class="col equal-height-col">01/01/2024</div>
                 <div class="col equal-height-col">HCP referral</div>
                 <div class="col equal-height-col">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                 </div>
-                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm" onClick="nextpage('refhcpdetails.html')">Select</button></div>
+                <div class="col equal-height-col"><button type="button" class="btn btn-primary  btn-sm" onClick="nextpage('refhcpbpdetails.html')">Select</button></div>
             </div>
         </div>
 
     </div>
-    <input type="hidden" id="messageText" value="*" />
+    <input type="hidden" id="messageText" value="https://www.notion.so/christopherduda/UC-ELIG-LIST-001-Referrals-ca5b211c819646dab0d8c924683e1fdb?pvs=4" />
     <script>
 
         window.addEventListener('message', function (event) {

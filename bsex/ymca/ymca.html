@@ -103,6 +103,12 @@
         .navbar-nav li:hover > ul.dropdown-menu {
             display: block;
         }
+
+
+        li {
+            white-space: nowrap;
+        }
+
     </style>
 
 </head>
@@ -137,70 +143,8 @@
                                 Referrals
                             </a>
                             <ul class="dropdown-menu">
-                                
-                                <li class="dropdown-submenu">
-                                    <a href="#" data-bs-toggle="dropdown-item" class="dropdown-item dropdown-toggle">Referral Lists etc.</a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="List of All Referrals not processed yet."
-                                               onclick='loadnewpage("referrals","referrallist.html")'>Referral List</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="Self referral candidate details for Blood Pressure Self-monitoring Program"
-                                               onclick='loadnewpage("referrals","refbpdetails.html")'>Referral BP details </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="Self referral candidate details for Weight Loss Program"
-                                               onclick='loadnewpage("referrals","refwldetails.html")'>Referral WL details </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="Self referral candidate details for Diabetes Prevention Program"
-                                               onclick='loadnewpage("referrals","refdppdetails.html")'>HCP Referral DBP details </a>
-                                        </li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HHCP referral patient details for Blood Pressure Self-monitoring Program"
-                                               onclick='loadnewpage("referrals","refhcpbpdetails.html")'>HCP Referral BP details </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HCP referral patient details for Weight Loss Program"
-                                               onclick='loadnewpage("referrals","refhcpwldetails.html")'>HCP Referral WL details </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HCP referral patient details for Diabetes Prevention Program"
-                                               onclick='loadnewpage("referrals","refhcpdppdetails.html")'>HCP Referral DBP details </a>
-                                        </li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="Self referral candidate rejection communication email or logging a phone call"
-                                               onclick='loadnewpage("referrals","refrejectcomms.html")'>Referral Reject</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HCP referral patient rejection communication email or logging a phone call"
-                                               onclick='loadnewpage("referrals","refhcprejectcomms.html")'>HCP Referral Reject</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><hr class="dropdown-divider"></li>
                                 <li>
+                                    <h6 class="ms-2 text-primary">Self Referral Screens</h6>
                                     <a class="dropdown-item" href="#"
                                        data-bs-toggle="tooltip" data-bs-placement="right"
                                        data-bs-title="Blood pressure monitoring self referral form"
@@ -219,28 +163,32 @@
                                        onclick='loadnewpage("referrals","diabetesprevention.html")'>Diabetes Prevention</a>
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" data-bs-toggle="dropdown-item" class="dropdown-item dropdown-toggle">HCP Referral</a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HCP Physiscian patient referral Initial Welcome Page"
-                                               onclick='loadnewpage("referrals","hcpintro.html")'>Intro Screen 1</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="Patient details and program selection"
-                                               onclick='loadnewpage("referrals","hcpreferal-1.html")'>Details Screen 2</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#"
-                                               data-bs-toggle="tooltip" data-bs-placement="right"
-                                               data-bs-title="HCP Details and Signature and confirmation screen"
-                                               onclick='loadnewpage("referrals","hcpreferal-2.html")'>HCP Screen 3</a>
-                                        </li>
-                                    </ul>
+                                <li>
+                                    <h6 class="ms-2 text-primary">HCP Referral Screens</h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP Physiscian patient referral Initial Welcome Page"
+                                       onclick='loadnewpage("referrals","hcpintro.html")'>Intro Screen 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Patient details and program selection"
+                                       onclick='loadnewpage("referrals","hcpreferal-1.html")'>Details Screen 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP Details and Signature and confirmation screen"
+                                       onclick='loadnewpage("referrals","hcpreferal-2.html")'>HCP Screen 3</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Self and HCP Referral process</h6>
+                                    <a class="dropdown-item" href="https://www.notion.so/christopherduda/Self-Referral-Flow-bea526ecfc26405ca558b97fb0b4495b?pvs=4"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Functional Requirements document outlining the Referral process for a self referral candididate or a patient referred by their HCP"
+                                       target='_blank'>Referral Flow</a>
                                 </li>
                             </ul>
                         </li>
@@ -249,62 +197,174 @@
                                 Eligibility
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","referrallist.html")'>Referral List</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","bloodpressure.html")'>Blood Pressure</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","weightloss.html")'>Weight Loss</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","diabetesprevention.html","")'>Diabetes Prevention</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="List of All Referrals not processed yet."
+                                       onclick='loadnewpage("referrals","referrallist.html")'>Referral Waiting List</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary text-primary">Self Referral Eligibilty</h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate details for Blood Pressure Self-monitoring Program"
+                                       onclick='loadnewpage("referrals","refbpdetails.html")'>Blood Pressure details </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate details for Weight Loss Program"
+                                       onclick='loadnewpage("referrals","refwldetails.html")'>Weight Loss details </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate details for Diabetes Prevention Program"
+                                       onclick='loadnewpage("referrals","refdppdetails.html")'>Diabetes Prevention details </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">HCP Referrals Eligibilty</h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HHCP referral patient details for Blood Pressure Self-monitoring Program"
+                                       onclick='loadnewpage("referrals","refhcpbpdetails.html")'>Blood Pressure details </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient details for Weight Loss Program"
+                                       onclick='loadnewpage("referrals","refhcpwldetails.html")'>Weight Loss details </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient details for Diabetes Prevention Program"
+                                       onclick='loadnewpage("referrals","refhcpdppdetails.html")'>Diabetes Prevention details </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Referral Eligibilty Communications </h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate communication email to confirm elegibility or to decline the candidate for the Program requested"
+                                       onclick='loadnewpage("referrals","refremailconf.html")'>Email Confirmation/Decline</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate communication phone call to confirm elegibility or to decline the candidate for the Program requested"
+                                       onclick='loadnewpage("referrals","refrphoneconf.html")'>Phone Call Confirmation/Decline</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient rejection communication email or logging a phone call"
+                                       onclick='loadnewpage("referrals","refhcprejectcomms.html")'>HCP Email Confirmation/Reject</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient rejection communication email or logging a phone call"
+                                       onclick='loadnewpage("referrals","refhcprejectcomms.html")'>HCP Phone Call Confirmation/Reject</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Referral eligibility process</h6>
+                                    <a class="dropdown-item" href="https://www.notion.so/christopherduda/Eligibility-flow-f028c525a3b8429c9212b0b09482f04d?pvs=4"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Functional Requirements document outlining the Referral process for a self referral candididate or a patient referred by their HCP"
+                                       target='_blank'>Eligibility Flow</a>
+                                </li>
                             </ul>
                         </li>
+
                         <li class="dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Enrollment
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","bloodpressure.html","")'>Blood Pressure</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","weightloss.html","")'>Weight Loss</a></li>
-                                <li><a class="dropdown-item" href="#" onclick='loadnewpage("referrals","diabetesprevention.html","")'>Diabetes Prevention</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="List of All Eligible participants waiting to be enrolled."
+                                       onclick='loadnewpage("enrollment", "participantlist.html")'>Participant Waiting List</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Participant screen to manage the communications via email or phone call to set up an enrollment meeting."
+                                       onclick='loadnewpage("enrollment", "participantcomms.html")'>Participant Communications</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary text-primary">Enrollment Meeting</h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate details for Blood Pressure Self-monitoring Program"
+                                       onclick='noPath("referrals","refbpdetails.html" )'>Self Referral Participant</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient rejection communication email or logging a phone call"
+                                       onclick='noPath("referrals","refhcprejectcomms.html")'>HCP Referral</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Enrollment Communications </h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Self referral candidate rejection communication email or logging a phone call"
+                                       onclick='loadnewpage("enrollment","EmailMeeting.html")'>Email Meeting Request</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="HCP referral patient rejection communication email or logging a phone call"
+                                       onclick='loadnewpage("enrollment","CallMeeting.html")'>Phone Call Meeting Request</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Waiver Forms</h6>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Blood Pressure Self-monitoring Program Waiver Form"
+                                       onclick='loadnewpage("waiver","BloodPressureSelfMonitoringWaiver.html")'>Blood Pressure Program Waiver </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Weight Loss Program Waiver Form"
+                                       onclick='loadnewpage("waiver","YMCAWeightLossWaiver.html")'>Weight Loss Program Waiver</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Diabetes Prevention Program Waiver Form"
+                                       onclick='loadnewpage("waiver","DiabetesPreventionProgramWaiver.html")'>Diabetes Prevention Program Waiver</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <h6 class="ms-2 text-primary">Enrollment Process</h6>
+                                    <a class="dropdown-item" href="https://www.notion.so/christopherduda/Eligibility-flow-f028c525a3b8429c9212b0b09482f04d?pvs=4"
+                                       data-bs-toggle="tooltip" data-bs-placement="right"
+                                       data-bs-title="Functional Requirements document outlining the Enrollment process for a self referral candididate or a patient referred by their HCP"
+                                       target='_blank'>Enrollment Flow</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link disabled" aria-disabled="true">Cohorts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link disabled" aria-disabled="true">Event Monitoring</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" id="menu" data-bs-toggle="dropdown" class="nav-link dropdown-toggle" data-bs-display="static">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Submenu 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="#" data-bs-toggle="dropdown" class="dropdown-item dropdown-toggle">Submenu 2</a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item a</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item b</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown-item">Item c</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Programs</a>
                         </li>
-
                     </ul>
                     <form class="d-flex" role="search">
                         <span class="form-control me-2">Functional Requirements</span>
@@ -320,7 +380,7 @@
 
         <div class="container-fluid vh-100 d-flex" style="padding-top: 70px; ">
 
-            <iframe id="myIframe" style="width: 100%;height: 100%">
+            <iframe id="myIframe" style="width: 100%;height: 100%" src="https://storage.googleapis.com/dsiymca/ymca/intro.html">
             </iframe>
         </div>
         <div id="app">
@@ -371,6 +431,18 @@
             }
 
         });
+        function noPath() {
+            p = document.querySelector('#modaltext');
+            p.textContent = 'Screen currently under development.';
+            myModal.show();
+            return;
+
+        }
+        function loadreqdoc(idx) {
+            const iframe = document.querySelector("#myIframe");
+            url = "https://www.notion.so/christopherduda/Self-Referral-Flow-bea526ecfc26405ca558b97fb0b4495b?pvs=4"
+            iframe.contentWindow.postMessage("getUrl", "*");
+        }
 
         function sendMessage() {
             const iframe = document.querySelector("#myIframe");
@@ -403,7 +475,7 @@
 
         function loadhome() {
             const myIframe = document.getElementById("myIframe");
-            myIframe.src = "";
+            myIframe.src = "https://storage.googleapis.com/dsiymca/ymca/intro.html";
         }
 
         function goNotion() {
